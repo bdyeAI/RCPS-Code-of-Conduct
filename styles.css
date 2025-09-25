@@ -1,46 +1,48 @@
-:root{
+:root {
+  /* === BRAND COLORS: replace with your official hex codes === */
+  --brand: #004C97;
+  --accent: #FFD200;
+
+  /* Optional: adjust neutrals */
   --bg: #fbfbf9;
   --fg: #1f1c1d;
-  --brand: #094ea7;
-  --accent: #eaa21c;
   --muted: #a0a1a1;
-  --success: #068a0a;
+  --success: #06a77d;
 }
 
 * { box-sizing: border-box; }
-body { margin:0; background:#fbfbf9; color:#1f1c1d; font: 16px/1.5 system-ui, -apple-system, Segoe UI, Roboto, sans-serif; }
+body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui,-apple-system,Segoe UI,Roboto,sans-serif; }
 
-.app-header { display:flex; align-items:center; gap:.75rem; padding:.75rem 1rem; background:var(--brand); color:white; position:sticky; top:0; z-index:2; }
+.app-header { display:flex; align-items:center; gap:.75rem; padding:.75rem 1rem; background:var(--brand); color:white; position:sticky; top:0; z-index:10; }
 .logo { height:40px; width:auto; border-radius:.5rem; background:white; padding:.25rem; }
 .app-title { font-size:1.25rem; margin:0; flex:1; }
 .install-btn { background:white; color:var(--brand); border:none; padding:.5rem .75rem; border-radius:.5rem; font-weight:600; }
 
-.app-footer { position:sticky; bottom:0; background:#fff; padding:.5rem; border-top:1px solid #eee; }
+.app-footer { position:sticky; bottom:0; background:#fff; padding:.5rem; border-top:1px solid #eee; z-index:5; }
 #searchInput { width:100%; padding:.65rem .8rem; border:1px solid #ddd; border-radius:.6rem; }
 
-.grid { display:grid; gap: .75rem; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); padding:1rem; }
+.grid { display:grid; gap:.75rem; grid-template-columns: repeat(auto-fill, minmax(220px,1fr)); padding:1rem; }
 .card { background:white; border:1px solid #eee; border-radius:1rem; padding:1rem; box-shadow:0 1px 3px rgba(0,0,0,.05); cursor:pointer; transition:transform .05s ease; }
 .card:hover { transform: translateY(-2px); }
 .card h3 { margin:.25rem 0 .25rem; font-size:1.05rem; }
 .card small { color:#555; }
 
-.breadcrumbs { display:flex; gap:.5rem; padding: .75rem 1rem 0; color:#555; font-size:.9rem; }
+.breadcrumbs { display:flex; gap:.5rem; padding:.75rem 1rem 0; color:#555; font-size:.9rem; }
 .breadcrumbs a { color: var(--brand); text-decoration:none; }
 
 .table { width:100%; border-collapse: collapse; }
 .table th, .table td { border-bottom:1px solid #eee; padding:.6rem .5rem; vertical-align:top; }
 .table th { text-align:left; font-size:.9rem; color:#333; }
 .behavior { font-weight:600; }
-.band { font-size:.8rem; color:#555; }
 
 .levels { display:flex; gap:.35rem; flex-wrap:wrap; }
-.dot { width:28px; height:28px; display:inline-grid; place-items:center; border-radius:50%; background:var(--accent); color:white; font-size:.85rem; font-weight:700; border: none; cursor:pointer; }
-.dot.secondary { background:var(--brand); }
-.dot:focus { outline: 2px solid black; outline-offset:2px; }
+.dot { width:28px; height:28px; display:inline-grid; place-items:center; border-radius:50%; background:var(--accent); color:black; font-size:.85rem; font-weight:700; border:1px solid rgba(0,0,0,.15); cursor:pointer; }
+.dot.secondary { background:var(--brand); color:white; }
+.dot:focus { outline:2px solid black; outline-offset:2px; }
 
-.modal { position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,.4); }
+.modal { position:fixed; inset:0; display:none; align-items:center; justify-content:center; background:rgba(0,0,0,.45); z-index:10000; }
 .modal[aria-hidden="false"] { display:flex; }
-.modal-content { background:white; max-width:720px; width:92%; border-radius:1rem; padding:1rem 1rem 1.25rem; box-shadow: 0 20px 50px rgba(0,0,0,.25); }
+.modal-content { background:white; max-width:720px; width:92%; max-height:80vh; overflow:auto; border-radius:1rem; padding:1rem 1rem 1.25rem; box-shadow:0 20px 50px rgba(0,0,0,.25); }
 .modal-content h2 { margin-top:0; }
 .close { float:right; background:transparent; border:none; font-size:1.5rem; cursor:pointer; }
 .response-list { padding-left:1.1rem; }

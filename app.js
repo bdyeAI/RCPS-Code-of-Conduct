@@ -1,4 +1,4 @@
-// Minimal SPA router + PWA behaviors app
+// App with modal scroll lock + dynamic theme-color
 let APP = { data: null, installPrompt: null };
 
 async function loadData() {
@@ -6,6 +6,7 @@ async function loadData() {
   APP.data = await res.json();
 }
 
+// tiny helper
 const el = (tag, attrs={}, ...children) => {
   const node = document.createElement(tag);
   Object.entries(attrs).forEach(([k,v]) => {
@@ -16,6 +17,12 @@ const el = (tag, attrs={}, ...children) => {
   for (const c of children) node.append(c?.nodeType ? c : document.createTextNode(c));
   return node;
 };
+
+function setThemeMeta() {
+  const brand = getComputedStyle(document.documentElement).getPropertyValue('--brand').trim();
+  const meta = document.querySelector('meta[name="theme-color"]');
+  if (brand && meta) meta.setAttribute('content', brand);
+}
 
 function breadcrumbs(parts) {
   const wrap = el('nav', {class:'breadcrumbs', 'aria-label':'Breadcrumbs'});
@@ -94,10 +101,12 @@ function openResponses(level) {
   modalBody.innerHTML = '';
   modalBody.append(body);
   modal.setAttribute('aria-hidden', 'false');
+  document.body.style.overflow = 'hidden'; // lock scroll
 }
 
 function closeModal() {
   document.getElementById('modal').setAttribute('aria-hidden', 'true');
+  document.body.style.overflow = ''; // restore scroll
 }
 
 function route() {
@@ -113,6 +122,9 @@ window.addEventListener('hashchange', route);
 document.addEventListener('click', e => {
   if (e.target && e.target.id==='closeModal') closeModal();
   if (e.target && e.target.id==='modal') closeModal();
+});
+document.addEventListener('keydown', e => {
+  if (e.key === 'Escape') closeModal();
 });
 
 document.addEventListener('input', e => {
@@ -138,7 +150,9 @@ if ('serviceWorker' in navigator) {
   });
 }
 
+// Boot
 (async function init(){
   await loadData();
+  setThemeMeta();
   route();
 })();
