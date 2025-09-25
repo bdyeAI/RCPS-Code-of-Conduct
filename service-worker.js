@@ -1,4 +1,4 @@
-const CACHE = 'conduct-cache-v2';
+const CACHE = 'conduct-cache-v3';
 const ASSETS = ['./','./index.html','./styles.css','./app.js','./data.json','./manifest.webmanifest','./assets/logo.png'];
 
 self.addEventListener('install', (e) => {
