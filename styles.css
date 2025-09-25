@@ -46,3 +46,29 @@ body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui,
 .modal-content h2 { margin-top:0; }
 .close { float:right; background:transparent; border:none; font-size:1.5rem; cursor:pointer; }
 .response-list { padding-left:1.1rem; }
+.level-desc {
+  margin: .25rem 0 .75rem;
+  color: #333;
+  line-height: 1.55;
+}
+
+.divider {
+  border: 0;
+  height: 2px;                /* visually clear, not distracting */
+  background: #e8e8e8;        /* soft, neutral */
+  border-radius: 2px;
+  margin: .25rem 0 1rem;
+}
+.level-desc {
+  margin: .25rem 0 .75rem;
+  color: #333;
+  line-height: 1.55;
+}
+
+.divider {
+  border: 0;
+  height: 2px;                /* visually clear, not distracting */
+  background: #e8e8e8;        /* soft, neutral */
+  border-radius: 2px;
+  margin: .25rem 0 1rem;
+}
