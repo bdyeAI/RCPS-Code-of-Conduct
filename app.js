@@ -92,17 +92,32 @@ function levelDot(level, band) {
 
 function openResponses(level) {
   const list = APP.data.responses[level] || [];
+
+  // Pull the first line out as a description (no bullet)
+  const description = list.length ? list[0] : "";
+  const items = list.length > 1 ? list.slice(1) : [];
+
   const body = el('div', {},
     el('h2', {}, `Level ${level} Responses`),
-    el('ul', {class:'response-list'}, ...list.map(item => el('li', {}, item)))
+
+    // Description paragraph (no bullet)
+    description ? el('p', {class: 'level-desc'}, description) : null,
+
+    // Soft divider between description and bullet list (only if we have both)
+    (description && items.length) ? el('hr', {class: 'divider'}) : null,
+
+    // Bulleted list of responses
+    el('ul', {class:'response-list'}, ...items.map(item => el('li', {}, item)))
   );
+
   const modal = document.getElementById('modal');
   const modalBody = document.getElementById('modalBody');
   modalBody.innerHTML = '';
   modalBody.append(body);
   modal.setAttribute('aria-hidden', 'false');
-  document.body.style.overflow = 'hidden'; // lock scroll
+  document.body.style.overflow = 'hidden'; // keep the background from scrolling
 }
+
 
 function closeModal() {
   document.getElementById('modal').setAttribute('aria-hidden', 'true');
