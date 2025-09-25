@@ -1,0 +1,21 @@
+{
+  "name": "RCPS Code of Conduct",
+  "short_name": "RCPS Conduct",
+  "start_url": ".",
+  "scope": ".",
+  "display": "standalone",
+  "background_color": "#fbfbf9",
+  "theme_color": "#094ea7",
+  "icons": [
+    {
+      "src": "assets/logo.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/logo.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

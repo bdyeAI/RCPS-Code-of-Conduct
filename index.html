@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RCPS Code of Conduct</title>
+  <meta name="theme-color" content="#094ea7">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="assets/logo.png">
+  <link rel="apple-touch-icon" href="assets/logo.png">
+  <link href="styles.css" rel="stylesheet">
+</head>
+<body>
+  <header class="app-header">
+    <img src="assets/logo.png" alt="Logo" class="logo">
+    <h1 class="app-title">RCPS Code of Conduct</h1>
+    <button id="installBtn" class="install-btn" hidden>Install App</button>
+  </header>
+
+  <main id="app"></main>
+
+  <div id="modal" class="modal" aria-hidden="true" role="dialog">
+    <div class="modal-content">
+      <button class="close" id="closeModal" aria-label="Close">×</button>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <footer class="app-footer">
+    <input id="searchInput" type="search" placeholder="Search behaviors…" aria-label="Search behaviors">
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

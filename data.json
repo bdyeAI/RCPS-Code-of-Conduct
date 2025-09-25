@@ -1,0 +1,936 @@
+{
+  "palette": [
+    "#fbfbf9",
+    "#1f1c1d",
+    "#eaa21c",
+    "#094ea7",
+    "#a0a1a1",
+    "#068a0a"
+  ],
+  "categories": [
+    {
+      "code": "A",
+      "name": "Behaviors that Impede Academic Progress",
+      "abbrev": "BAP",
+      "title": "Category A:  Behaviors that Impede Academic Progress (BAP)",
+      "behaviors": [
+        {
+          "behavior": "Interfering with learning in the classroom (talking, excessive noise, off-task, out of seat, possessing items that distract",
+          "elementary": [
+            1
+          ],
+          "secondary": [
+            1,
+            2
+          ]
+        },
+        {
+          "behavior": "Interfering with learning outside of the classroom (excessive noise, interrupting a class, etc.)",
+          "elementary": [
+            1
+          ],
+          "secondary": [
+            1,
+            2
+          ]
+        },
+        {
+          "behavior": "Scholastic dishonesty (cheating, plagiarism)",
+          "elementary": [
+            1
+          ],
+          "secondary": [
+            1,
+            2
+          ]
+        },
+        {
+          "behavior": "Unexcused tardiness to class",
+          "elementary": [
+            1
+          ],
+          "secondary": [
+            1,
+            2
+          ]
+        },
+        {
+          "behavior": "Unexcused tardiness to school",
+          "elementary": [
+            1
+          ],
+          "secondary": [
+            1,
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "code": "B",
+      "name": "Behaviors Related to School Operations",
+      "abbrev": "BSO",
+      "title": "Category B:  Behaviors Related to School Operations (BSO)",
+      "behaviors": [
+        {
+          "behavior": "Altering an official document or record",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Bringing unauthorized persons to school or allowing unauthorized persons to enter the school building",
+          "elementary": [
+            1,
+            2,
+            3
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Dress Code Violation",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2
+          ]
+        },
+        {
+          "behavior": "Failure to be in one’s assigned place on school grounds",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2
+          ]
+        },
+        {
+          "behavior": "Failure to attend assigned disciplinary setting (detention, in-school suspension, Saturday School)",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2
+          ]
+        },
+        {
+          "behavior": "Gambling (games of chance for money or profit)",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2
+          ]
+        },
+        {
+          "behavior": "Giving false information to staff",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2
+          ]
+        },
+        {
+          "behavior": "Refusal to comply with requests of staff in a way that interferes with the operation of the school.",
+          "elementary": [
+            1,
+            2,
+            3
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Unauthorized use of school electronic or other equipment",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2
+          ]
+        },
+        {
+          "behavior": "Vandalism, graffiti, or other damage to school or personal property",
+          "elementary": [
+            1,
+            2,
+            3
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Violation of the Acceptable Use of Technology/Internet policy",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2
+          ]
+        },
+        {
+          "behavior": "Violation of school board policy regarding the possession or use of portable communication devices",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "code": "C",
+      "name": "Relationship Behaviors",
+      "abbrev": "RB",
+      "title": "Category C:  Relationship Behaviors (RB)",
+      "behaviors": [
+        {
+          "behavior": "Bullying with no physical injury",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Cyberbullying",
+          "elementary": [
+            2,
+            3
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Failure to respond to questions or requests by staff",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Inappropriate physical contact that is sexual in nature or violates school rules regarding contact",
+          "elementary": [
+            1,
+            2,
+            3
+          ],
+          "secondary": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "behavior": "Posting, distributing, displaying or sharing material or literature that is libelous, including using electronic means to post such material",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Saying or writing either directly or through electronic communication, sexually suggestive comments, innuendos, propositions, or other remarks of a sexual nature",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Speaking to another in an uncivil, discourteous manner",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Teasing, taunting, engaging in a verbal confrontation, verbally inciting a fight",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Using profane or vulgar language or gestures (swearing, cursing, hate speech, gang signs or gestures)",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Using slurs based upon the actual or perceived race, ethnicity, color, national origin, citizenship/immigration status, weight, gender, gender identity, gender expression, sexual orientation, or disability",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "code": "D",
+      "name": "Behaviors of a Safety Concern",
+      "abbrev": "BSC",
+      "title": "Category D:  Behaviors of a Safety Concern (BSC)",
+      "behaviors": [
+        {
+          "behavior": "Alcohol: Possessing or using alcohol",
+          "elementary": [
+            1,
+            2,
+            3
+          ],
+          "secondary": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "behavior": "Alcohol: Distributing alcohol to other students",
+          "elementary": [
+            2,
+            3,
+            4
+          ],
+          "secondary": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "behavior": "Bullying Behavior without physical injury that continues after intervention (Bullying that leads to physical injury should be classified as Assault and Battery.)",
+          "elementary": [
+            3,
+            4
+          ],
+          "secondary": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "behavior": "Bus: Distracting the bus driver",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Bus: Endangering the safety of others on the bus",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Cyberbullying that continues after intervention. Cyberbullying that relates a threat to the safety of students and staff should be treated with a higher level of intervention and  \nconsequences.",
+          "elementary": [
+            3,
+            4,
+            5
+          ],
+          "secondary": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "behavior": "Drugs: Possessing drug paraphernalia",
+          "elementary": [
+            1,
+            2,
+            3
+          ],
+          "secondary": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "behavior": "Drugs: Violating the school board's non-prescription (over-the-counter) medication policy",
+          "elementary": [
+            1,
+            2,
+            3
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Engaging in reckless behavior that creates a risk of injury to self or others",
+          "elementary": [
+            1,
+            2,
+            3
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Exposing body parts, lewd or indecent public behavior",
+          "elementary": [
+            1,
+            2,
+            3
+          ],
+          "secondary": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "behavior": "Fire alarm: Falsely activating a fire alarm or other disaster alarm",
+          "elementary": [
+            2,
+            3
+          ],
+          "secondary": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "behavior": "Fire Related: Possessing items that could be used to set or cause a fire or produce large amounts of smoke",
+          "elementary": [
+            1,
+            2,
+            3
+          ],
+          "secondary": [
+            2,
+            3,
+            5
+          ]
+        },
+        {
+          "behavior": "Inciting or causing a substantial disturbance to the operation of the school or the safety of staff and/or students",
+          "elementary": [
+            1,
+            2,
+            3
+          ],
+          "secondary": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "behavior": "Leaving school grounds without permission",
+          "elementary": [
+            1
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Physical contact of a sexual nature – patting body parts, pinching, tugging clothing,",
+          "elementary": [
+            1,
+            2,
+            3
+          ],
+          "secondary": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "behavior": "Physical sexual aggression and/or forcing another to engage in sexual activity",
+          "elementary": [
+            5
+          ],
+          "secondary": [
+            4,
+            5
+          ]
+        },
+        {
+          "behavior": "Shoving, pushing striking a student with no visible injury",
+          "elementary": [
+            1,
+            2,
+            3
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Stealing money or property without physical force",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Stealing money or property using physical force (no weapon involved)",
+          "elementary": [
+            3,
+            4
+          ],
+          "secondary": [
+            3,
+            4
+          ]
+        },
+        {
+          "behavior": "Stealing money or property using weapons or dangerous instruments",
+          "elementary": [
+            4,
+            5
+          ],
+          "secondary": [
+            4,
+            5
+          ]
+        },
+        {
+          "behavior": "Throwing an object that has the potential to cause a disturbance, injury, or property damage",
+          "elementary": [
+            1,
+            2
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Tobacco: Possessing/using tobacco products, electronic cigarettes, vaping equipment",
+          "elementary": [
+            2,
+            3
+          ],
+          "secondary": [
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Trespassing",
+          "elementary": [
+            2,
+            3
+          ],
+          "secondary": [
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "behavior": "Weapons: Possessing or selling any weapon as defined by school board policy, not including firearms",
+          "elementary": [
+            4,
+            5
+          ],
+          "secondary": [
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "code": "E",
+      "name": "Behaviors that Endanger Self or Others",
+      "abbrev": "BESO",
+      "title": "Category E:  Behaviors that Endanger Self or Others (BESO)",
+      "behaviors": [
+        {
+          "behavior": "Assault: Intending to cause physical injury to another person",
+          "elementary": [
+            1,
+            2,
+            3
+          ],
+          "secondary": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "behavior": "Assault & Battery: Causing physical injury to another person",
+          "elementary": [
+            3,
+            4,
+            5
+          ],
+          "secondary": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "behavior": "Bomb threat –Making a bomb threat",
+          "elementary": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "secondary": [
+            4,
+            5
+          ]
+        },
+        {
+          "behavior": "Drugs: Possessing controlled substances, illegal drugs, or synthetic hallucinogens, or unauthorized prescription medications",
+          "elementary": [
+            3,
+            4,
+            5
+          ],
+          "secondary": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "behavior": "Drugs: Being under the influence of controlled substances, illegal drugs or synthetic hallucinogens, or unauthorized prescription medications",
+          "elementary": [
+            3,
+            4,
+            5
+          ],
+          "secondary": [
+            4,
+            5
+          ]
+        },
+        {
+          "behavior": "Drugs: Using controlled substances, or using illegal drugs, or synthetic hallucinogens, or unauthorized prescription medications",
+          "elementary": [
+            3,
+            4,
+            5
+          ],
+          "secondary": [
+            4,
+            5
+          ]
+        },
+        {
+          "behavior": "Drugs: Distributing controlled substances or prescription medications or illegal drugs or synthetic hallucinogens, or alcohol to another student(s)",
+          "elementary": [
+            5
+          ],
+          "secondary": [
+            4,
+            5
+          ]
+        },
+        {
+          "behavior": "Fighting: The use of physical violence between students or on another person, where there is no injury as determined by the school administration",
+          "elementary": [
+            1,
+            2,
+            3
+          ],
+          "secondary": [
+            1,
+            2,
+            3
+          ]
+        },
+        {
+          "behavior": "Fire: Attempting to set, aiding in setting, or setting a fire",
+          "elementary": [
+            2,
+            3,
+            4
+          ],
+          "secondary": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "behavior": "Gang-Related Behavior: Engaging in threatening or dangerous behavior that is gang-related as defined in §18.2-46.1",
+          "elementary": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "secondary": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "behavior": "Hazing as defined in §18.2-56 and noted in § 22.1-279.6.",
+          "elementary": [
+            5
+          ],
+          "secondary": [
+            5
+          ]
+        },
+        {
+          "behavior": "Striking Staff: The use of force against a staff member when no injury is caused",
+          "elementary": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "secondary": [
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "behavior": "Threatening or instigating violence, injury, or harm to a staff member",
+          "elementary": [
+            1,
+            2,
+            3,
+            4
+          ],
+          "secondary": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "behavior": "Threatening or instigating violence, injury, or harm to another student",
+          "elementary": [
+            1,
+            2,
+            3
+          ],
+          "secondary": [
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        {
+          "behavior": "Possession of a firearm or destructive device as defined in §  22.1-277.07.",
+          "elementary": [
+            5
+          ],
+          "secondary": [
+            5
+          ]
+        },
+        {
+          "behavior": "Using any weapon to threaten or attempt to injure school personnel, students, or others",
+          "elementary": [
+            5
+          ],
+          "secondary": [
+            5
+          ]
+        }
+      ]
+    }
+  ],
+  "responses": {
+    "1": [
+      "Level 1 responses are intended to prevent further behavioral issues while keeping the student in school.",
+      "Re-teaching or modeling of desired behavior",
+      "Recognize/Reward appropriate behavior",
+      "Administrator/Student conference and/or Administrator/Student/Teacher conference",
+      "Written reflection or letter of apology",
+      "Peer mediation or conflict resolution",
+      "Behavior progress chart",
+      "Community service (appropriate to correct the behavior)",
+      "Restitution",
+      "Seat change",
+      "Loss of school privileges",
+      "Confiscation by the administration",
+      "Administrator/Teacher/Parent/Guardian conference",
+      "Detention (before school, at lunch, after school)",
+      "In-school suspension (Up to one-two days) with behavioral instruction and academic support"
+    ],
+    "2": [
+      "Administrative responses and interventions at this level are designed to prevent further behavior issues and keep the student in school. Depending upon the severity of the behavior, short-term removal of the student from the classroom may be appropriate.",
+      "Student Conference",
+      "Administrator/Teacher/Counselor/Student conference (includes re-teaching of expected behavior)",
+      "Administrator/Teacher/Parent/Guardian conference",
+      "Check-In/Check-Out",
+      "Mediation or conflict resolution",
+      "Detention (before school, at lunch, after school)",
+      "Referral to support services (e.g., School Counselor, Behavior Interventionist, Mentor Program, and Problem-Solving Team ex. Substance Use and Intervention Program",
+      "Referral to Individualized Education Plan (IEP) Team",
+      "Schedule change",
+      "Community service (appropriate to correct the behavior)",
+      "Referral for community-based services",
+      "Saturday school",
+      "Restitution",
+      "Confiscation",
+      "Temporary loss of privileges",
+      "In-school suspension with behavioral interventions and/or restorative practices (1-3 days)"
+    ],
+    "3": [
+      "Depending on the severity, chronic nature of the behavior, and/or safety concerns, Level 3 behaviors may result in the student’s short-term removal from school.",
+      "Administrator/Teacher/Parent/Guardian Conference",
+      "Detention",
+      "In-school suspension with restorative practices (three plus days not to exceed five days).",
+      "Referral to support services (e.g., School Counselor, Behavior Interventionist, Mentor Program, Problem Solving Team, Therapeutic Day Treatment (TDT), Substance Use and Intervention Program)",
+      "Referral for community-based services",
+      "Functional Behavioral Assessment (FBA) and Behavior Intervention Plan (BIP) Development (Special Education Students)",
+      "Functional Behavioral Assessment (FBA) and Behavior Support Plan (BSP) Development (General Education Students)",
+      "Community service",
+      "Revocation of privileges",
+      "Restitution",
+      "Referral to alternative education programs"
+    ],
+    "4": [
+      "Some Level 4 behaviors require a report to the superintendent or superintendent’s designee as outlined in the Code of Virginia § 22.1-279.3:1. Local school board policy may require additional reporting. A referral to the superintendent or superintendent’s designee does not automatically result in a long-term suspension, change of placement or expulsion. After a review of the incident in context, the superintendent or designee may return students to the comprehensive setting with additional supports and/or responses to be implemented.",
+      "Threat Assessment as indicated by the behavior",
+      "Referral to law enforcement as required",
+      "Parent-Administrator-Teacher-Student behavior contract",
+      "Long-term revocation of privileges",
+      "Restitution via written contract",
+      "Referral for community-based services",
+      "Schedule change",
+      "Short-term out-of-school suspension (for preschool to grade three students, one to three days, four to ten days for fourth- to sixth-grade students, or five to ten days for seventh- to twelfth-grade students)",
+      "Recommendation for a long-term suspension as determined by local policy or by Code."
+    ],
+    "5": [
+      "Level 5 responses are reserved for those behaviors that require a referral to the superintendent or designee. For preschool to grade three students, any suspension beyond three days must be referred to the superintendent. A referral to the superintendent or designee may not automatically result in an expulsion, alternative placement, school reassignment, or long-term suspension.",
+      "Required School-based Administrative Responses to Level 5 Behaviors",
+      "Threat Assessment as indicated by the behavior",
+      "Referral to law enforcement as required",
+      "Referral to Superintendent or designee",
+      "Examples of superintendent or designee responses to Level 5 behavior",
+      "Long-term suspension",
+      "Alternative placement",
+      "Expulsion",
+      "School reassignment: Students may be assigned to another school within the division.",
+      "Return the student to the school setting with appropriate supports and interventions."
+    ]
+  }
+}
