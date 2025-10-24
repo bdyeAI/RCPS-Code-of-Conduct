@@ -72,3 +72,26 @@ body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui,
   border-radius: 2px;
   margin: .25rem 0 1rem;
 }
+
+.nav-bar {
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  padding: .5rem 1rem .25rem;
+}
+
+.back-btn {
+  background: var(--brand);
+  color: white;
+  border: none;
+  border-radius: .5rem;
+  padding: .4rem .75rem;
+  font-size: .9rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 1px 3px rgba(0,0,0,.2);
+}
+
+.back-btn:hover {
+  opacity: 0.9;
+}
