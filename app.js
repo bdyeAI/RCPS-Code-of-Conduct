@@ -1,4 +1,4 @@
-// App with modal scroll lock + dynamic theme-color
+// App with header back button + improved responses modal formatting
 let APP = { data: null, installPrompt: null };
 
 async function loadData() {
@@ -6,7 +6,7 @@ async function loadData() {
   APP.data = await res.json();
 }
 
-// tiny helper
+// small helper
 const el = (tag, attrs={}, ...children) => {
   const node = document.createElement(tag);
   Object.entries(attrs).forEach(([k,v]) => {
@@ -39,6 +39,11 @@ function breadcrumbs(parts) {
 function renderHome() {
   const main = document.getElementById('app');
   main.innerHTML = '';
+
+  // Remove header back button when on home
+  const backBtnHeader = document.querySelector('.back-btn-header');
+  if (backBtnHeader) backBtnHeader.remove();
+
   const grid = el('section', {class:'grid'});
   APP.data.categories.forEach(cat => {
     grid.append(el('article', {class:'card', onclick: () => location.hash = '#/category/'+cat.code},
@@ -52,16 +57,19 @@ function renderHome() {
 function renderCategory(code) {
   const main = document.getElementById('app');
   main.innerHTML = '';
+
+  // add header back button (rectangular with rounded corners)
+  const header = document.querySelector('.app-header');
+  if (!document.querySelector('.back-btn-header')) {
+    const backBtn = el('button', { class: 'back-btn-header', onclick: () => location.hash = '#/' }, '← Back');
+    header.prepend(backBtn);
+  }
+
   const cat = APP.data.categories.find(c => c.code === code);
   if (!cat) { main.textContent = 'Category not found.'; return; }
 
-  // Back button + breadcrumbs
-const navBar = el('div', {class:'nav-bar'},
-  el('button', {class:'back-btn', onclick: () => location.hash = '#/'}, '← Back to Home'),
-  breadcrumbs([{href:'category/'+code, label:'Category '+code}])
-);
-main.append(navBar);
-
+  // show breadcrumbs below header (no old in-content back button)
+  main.append(breadcrumbs([{href:'category/'+code, label:'Category '+code}]));
 
   const table = el('table', {class:'table', role:'table'});
   const thead = el('thead', {},
@@ -96,23 +104,17 @@ function levelDot(level, band) {
   return el('button', {class:'dot '+(band==='sec'?'secondary':''), 'aria-label':`Level ${level} responses`, onclick: () => openResponses(level)}, String(level));
 }
 
+// Improved modal: first line as description (no bullet) + divider + list
 function openResponses(level) {
   const list = APP.data.responses[level] || [];
 
-  // Pull the first line out as a description (no bullet)
   const description = list.length ? list[0] : "";
   const items = list.length > 1 ? list.slice(1) : [];
 
   const body = el('div', {},
     el('h2', {}, `Level ${level} Responses`),
-
-    // Description paragraph (no bullet)
     description ? el('p', {class: 'level-desc'}, description) : null,
-
-    // Soft divider between description and bullet list (only if we have both)
     (description && items.length) ? el('hr', {class: 'divider'}) : null,
-
-    // Bulleted list of responses
     el('ul', {class:'response-list'}, ...items.map(item => el('li', {}, item)))
   );
 
@@ -121,9 +123,8 @@ function openResponses(level) {
   modalBody.innerHTML = '';
   modalBody.append(body);
   modal.setAttribute('aria-hidden', 'false');
-  document.body.style.overflow = 'hidden'; // keep the background from scrolling
+  document.body.style.overflow = 'hidden'; // lock background scroll
 }
-
 
 function closeModal() {
   document.getElementById('modal').setAttribute('aria-hidden', 'true');
@@ -144,13 +145,9 @@ document.addEventListener('click', e => {
   if (e.target && e.target.id==='closeModal') closeModal();
   if (e.target && e.target.id==='modal') closeModal();
 });
-document.addEventListener('keydown', e => {
-  if (e.key === 'Escape') closeModal();
-});
+document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
 
-document.addEventListener('input', e => {
-  if (e.target && e.target.id === 'searchInput') route();
-});
+document.addEventListener('input', e => { if (e.target && e.target.id === 'searchInput') route(); });
 
 window.addEventListener('beforeinstallprompt', (e) => {
   e.preventDefault();
@@ -166,9 +163,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
 });
 
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', () => {
-    navigator.serviceWorker.register('service-worker.js');
-  });
+  window.addEventListener('load', () => { navigator.serviceWorker.register('service-worker.js'); });
 }
 
 // Boot
