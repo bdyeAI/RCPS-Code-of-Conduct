@@ -61,7 +61,7 @@ function renderCategory(code) {
   // add header back button (rectangular with rounded corners)
   const header = document.querySelector('.app-header');
   if (!document.querySelector('.back-btn-header')) {
-    const backBtn = el('button', { class: 'back-btn-header', onclick: () => location.hash = '#/' }, '← Back');
+    const backBtn = el('button', { class: 'back-btn-header', onclick: () => location.hash = '#/' }, '←');
     header.prepend(backBtn);
   }
 
