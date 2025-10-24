@@ -55,7 +55,13 @@ function renderCategory(code) {
   const cat = APP.data.categories.find(c => c.code === code);
   if (!cat) { main.textContent = 'Category not found.'; return; }
 
-  main.append(breadcrumbs([{href:'category/'+code, label:'Category '+code}]));
+  // Back button + breadcrumbs
+const navBar = el('div', {class:'nav-bar'},
+  el('button', {class:'back-btn', onclick: () => location.hash = '#/'}, '← Back to Home'),
+  breadcrumbs([{href:'category/'+code, label:'Category '+code}])
+);
+main.append(navBar);
+
 
   const table = el('table', {class:'table', role:'table'});
   const thead = el('thead', {},
