@@ -18,6 +18,19 @@ const el = (tag, attrs={}, ...children) => {
   return node;
 };
 
+
+function yesNoIcon(value) {
+  // value can be true/false/null
+  if (value === true) return el('span', {class:'icon icon-yes', role:'img', 'aria-label':'Yes'}, '✓');
+  if (value === false) return el('span', {class:'icon icon-no', role:'img', 'aria-label':'No'}, '✗');
+  return el('span', {class:'icon icon-na', 'aria-label':'Not specified'}, '—');
+}
+
+function behaviorLabel(b) {
+  // Prefix the definition with SBAR/behavior code when available
+  const code = b.sbarCode ? `${b.sbarCode} | ` : '';
+  return code + b.behavior;
+}
 function setThemeMeta() {
   const brand = getComputedStyle(document.documentElement).getPropertyValue('--brand').trim();
   const meta = document.querySelector('meta[name="theme-color"]');
@@ -75,6 +88,8 @@ function renderCategory(code) {
   const thead = el('thead', {},
     el('tr', {},
       el('th', {}, 'Behavior'),
+      el('th', {class:'yn-head'}, 'Victim Count'),
+      el('th', {class:'yn-head'}, 'Reports to Law'),
       el('th', {}, 'Elementary (Levels)'),
       el('th', {}, 'Secondary (Levels)')
     )
@@ -87,13 +102,19 @@ function renderCategory(code) {
     .filter(b => b.behavior.toLowerCase().includes(term))
     .forEach(b => {
       const tr = el('tr', {});
-      tr.append(el('td', {class:'behavior'}, b.behavior));
+      tr.append(el('td', {class:'behavior'}, behaviorLabel(b)));
+
+      // new columns: Victim Count + Reports to Law
+      const victimCell = el('td', {class:'yn-cell'}, yesNoIcon(b.victimCountRequired));
+      const lawCell = el('td', {class:'yn-cell'}, yesNoIcon(b.reportsToLawEnforcement));
+
       const elCell = el('td', {});
       const secCell = el('td', {});
       const elLevels = el('div', {class:'levels'}, ...b.elementary.map(l => levelDot(l, 'elem')));
       const secLevels = el('div', {class:'levels'}, ...b.secondary.map(l => levelDot(l, 'sec')));
       elCell.append(elLevels); secCell.append(secLevels);
-      tr.append(elCell, secCell);
+
+      tr.append(victimCell, lawCell, elCell, secCell);
       tbody.append(tr);
     });
   table.append(tbody);

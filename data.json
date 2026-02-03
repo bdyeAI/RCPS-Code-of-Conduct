@@ -22,7 +22,10 @@
           "secondary": [
             1,
             2
-          ]
+          ],
+          "sbarCode": "BAP1",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Interfering with learning outside of the classroom (excessive noise, interrupting a class, etc.)",
@@ -32,7 +35,10 @@
           "secondary": [
             1,
             2
-          ]
+          ],
+          "sbarCode": "BAP1",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Scholastic dishonesty (cheating, plagiarism)",
@@ -42,7 +48,10 @@
           "secondary": [
             1,
             2
-          ]
+          ],
+          "sbarCode": "BAP3",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Unexcused tardiness to class",
@@ -52,7 +61,10 @@
           "secondary": [
             1,
             2
-          ]
+          ],
+          "sbarCode": "BAP4",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Unexcused tardiness to school",
@@ -62,7 +74,10 @@
           "secondary": [
             1,
             2
-          ]
+          ],
+          "sbarCode": "BAP5",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         }
       ]
     },
@@ -82,7 +97,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "BSO1",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Bringing unauthorized persons to school or allowing unauthorized persons to enter the school building",
@@ -95,7 +113,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "BSO6",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Dress Code Violation",
@@ -106,10 +127,13 @@
           "secondary": [
             1,
             2
-          ]
+          ],
+          "sbarCode": "BSO7",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
-          "behavior": "Failure to be in one’s assigned place on school grounds",
+          "behavior": "Failure to be in one\u2019s assigned place on school grounds",
           "elementary": [
             1,
             2
@@ -117,7 +141,10 @@
           "secondary": [
             1,
             2
-          ]
+          ],
+          "sbarCode": "BSO16",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Failure to attend assigned disciplinary setting (detention, in-school suspension, Saturday School)",
@@ -128,7 +155,10 @@
           "secondary": [
             1,
             2
-          ]
+          ],
+          "sbarCode": "BSO5",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Gambling (games of chance for money or profit)",
@@ -139,7 +169,10 @@
           "secondary": [
             1,
             2
-          ]
+          ],
+          "sbarCode": "BSO8",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Giving false information to staff",
@@ -150,7 +183,10 @@
           "secondary": [
             1,
             2
-          ]
+          ],
+          "sbarCode": "BSO2",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Refusal to comply with requests of staff in a way that interferes with the operation of the school.",
@@ -163,7 +199,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "BSO3",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Unauthorized use of school electronic or other equipment",
@@ -174,7 +213,10 @@
           "secondary": [
             1,
             2
-          ]
+          ],
+          "sbarCode": "BSO11",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Vandalism, graffiti, or other damage to school or personal property",
@@ -187,7 +229,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "BSO14",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Violation of the Acceptable Use of Technology/Internet policy",
@@ -198,7 +243,10 @@
           "secondary": [
             1,
             2
-          ]
+          ],
+          "sbarCode": "BSO12",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Violation of school board policy regarding the possession or use of portable communication devices",
@@ -210,7 +258,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "BSO13",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         }
       ]
     },
@@ -230,7 +281,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "RB1",
+          "victimCountRequired": true,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Cyberbullying",
@@ -242,7 +296,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "RB2",
+          "victimCountRequired": true,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Failure to respond to questions or requests by staff",
@@ -254,7 +311,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "RB10",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Inappropriate physical contact that is sexual in nature or violates school rules regarding contact",
@@ -268,7 +328,10 @@
             2,
             3,
             4
-          ]
+          ],
+          "sbarCode": "RB11",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Posting, distributing, displaying or sharing material or literature that is libelous, including using electronic means to post such material",
@@ -280,7 +343,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "RB3",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Saying or writing either directly or through electronic communication, sexually suggestive comments, innuendos, propositions, or other remarks of a sexual nature",
@@ -292,7 +358,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "RB4",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Speaking to another in an uncivil, discourteous manner",
@@ -304,7 +373,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "RB6",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Teasing, taunting, engaging in a verbal confrontation, verbally inciting a fight",
@@ -316,7 +388,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "RB7",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Using profane or vulgar language or gestures (swearing, cursing, hate speech, gang signs or gestures)",
@@ -328,7 +403,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "RB8",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Using slurs based upon the actual or perceived race, ethnicity, color, national origin, citizenship/immigration status, weight, gender, gender identity, gender expression, sexual orientation, or disability",
@@ -341,7 +419,10 @@
             2,
             3,
             4
-          ]
+          ],
+          "sbarCode": "RB9",
+          "victimCountRequired": true,
+          "reportsToLawEnforcement": false
         }
       ]
     },
@@ -362,7 +443,10 @@
             2,
             3,
             4
-          ]
+          ],
+          "sbarCode": "BSC1",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Alcohol: Distributing alcohol to other students",
@@ -375,7 +459,10 @@
             2,
             3,
             4
-          ]
+          ],
+          "sbarCode": "BSC2",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Bullying Behavior without physical injury that continues after intervention (Bullying that leads to physical injury should be classified as Assault and Battery.)",
@@ -387,7 +474,10 @@
             3,
             4,
             5
-          ]
+          ],
+          "sbarCode": "BSC6",
+          "victimCountRequired": true,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Bus: Distracting the bus driver",
@@ -399,7 +489,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "BSC9",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Bus: Endangering the safety of others on the bus",
@@ -411,7 +504,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "BSC10",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Cyberbullying that continues after intervention. Cyberbullying that relates a threat to the safety of students and staff should be treated with a higher level of intervention and  \nconsequences.",
@@ -424,7 +520,10 @@
             3,
             4,
             5
-          ]
+          ],
+          "sbarCode": "BSC7",
+          "victimCountRequired": true,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Drugs: Possessing drug paraphernalia",
@@ -438,7 +537,10 @@
             2,
             3,
             4
-          ]
+          ],
+          "sbarCode": "BSC3",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Drugs: Violating the school board's non-prescription (over-the-counter) medication policy",
@@ -451,7 +553,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "BSC4",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Engaging in reckless behavior that creates a risk of injury to self or others",
@@ -464,7 +569,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "BSC13",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Exposing body parts, lewd or indecent public behavior",
@@ -478,7 +586,10 @@
             2,
             3,
             4
-          ]
+          ],
+          "sbarCode": "BSC18",
+          "victimCountRequired": true,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Fire alarm: Falsely activating a fire alarm or other disaster alarm",
@@ -491,7 +602,10 @@
             2,
             3,
             4
-          ]
+          ],
+          "sbarCode": "BSC11",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Fire Related: Possessing items that could be used to set or cause a fire or produce large amounts of smoke",
@@ -504,7 +618,10 @@
             2,
             3,
             5
-          ]
+          ],
+          "sbarCode": "BSC12",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Inciting or causing a substantial disturbance to the operation of the school or the safety of staff and/or students",
@@ -518,7 +635,10 @@
             3,
             4,
             5
-          ]
+          ],
+          "sbarCode": "BSC15",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Leaving school grounds without permission",
@@ -529,10 +649,13 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "BSC24",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
-          "behavior": "Physical contact of a sexual nature – patting body parts, pinching, tugging clothing,",
+          "behavior": "Physical contact of a sexual nature \u2013 patting body parts, pinching, tugging clothing,",
           "elementary": [
             1,
             2,
@@ -543,7 +666,10 @@
             2,
             3,
             4
-          ]
+          ],
+          "sbarCode": "BSC19",
+          "victimCountRequired": true,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Physical sexual aggression and/or forcing another to engage in sexual activity",
@@ -553,7 +679,10 @@
           "secondary": [
             4,
             5
-          ]
+          ],
+          "sbarCode": null,
+          "victimCountRequired": null,
+          "reportsToLawEnforcement": null
         },
         {
           "behavior": "Shoving, pushing striking a student with no visible injury",
@@ -566,7 +695,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "BSC17",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Stealing money or property without physical force",
@@ -578,7 +710,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "RB5",
+          "victimCountRequired": true,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Stealing money or property using physical force (no weapon involved)",
@@ -589,7 +724,10 @@
           "secondary": [
             3,
             4
-          ]
+          ],
+          "sbarCode": "BSC22",
+          "victimCountRequired": true,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Stealing money or property using weapons or dangerous instruments",
@@ -600,7 +738,10 @@
           "secondary": [
             4,
             5
-          ]
+          ],
+          "sbarCode": null,
+          "victimCountRequired": null,
+          "reportsToLawEnforcement": null
         },
         {
           "behavior": "Throwing an object that has the potential to cause a disturbance, injury, or property damage",
@@ -612,7 +753,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "BSC16",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Tobacco: Possessing/using tobacco products, electronic cigarettes, vaping equipment",
@@ -623,7 +767,10 @@
           "secondary": [
             2,
             3
-          ]
+          ],
+          "sbarCode": "BSC5",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Trespassing",
@@ -635,7 +782,10 @@
             2,
             3,
             4
-          ]
+          ],
+          "sbarCode": "BSC25",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Weapons: Possessing or selling any weapon as defined by school board policy, not including firearms",
@@ -646,7 +796,10 @@
           "secondary": [
             4,
             5
-          ]
+          ],
+          "sbarCode": "BSC27",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         }
       ]
     },
@@ -668,7 +821,10 @@
             2,
             3,
             4
-          ]
+          ],
+          "sbarCode": "BESO1",
+          "victimCountRequired": true,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Assault & Battery: Causing physical injury to another person",
@@ -681,10 +837,13 @@
             3,
             4,
             5
-          ]
+          ],
+          "sbarCode": "BESO2",
+          "victimCountRequired": true,
+          "reportsToLawEnforcement": false
         },
         {
-          "behavior": "Bomb threat –Making a bomb threat",
+          "behavior": "Bomb threat \u2013Making a bomb threat",
           "elementary": [
             1,
             2,
@@ -694,7 +853,10 @@
           "secondary": [
             4,
             5
-          ]
+          ],
+          "sbarCode": "BESO17",
+          "victimCountRequired": true,
+          "reportsToLawEnforcement": true
         },
         {
           "behavior": "Drugs: Possessing controlled substances, illegal drugs, or synthetic hallucinogens, or unauthorized prescription medications",
@@ -707,7 +869,10 @@
             3,
             4,
             5
-          ]
+          ],
+          "sbarCode": "BESO5",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Drugs: Being under the influence of controlled substances, illegal drugs or synthetic hallucinogens, or unauthorized prescription medications",
@@ -719,7 +884,10 @@
           "secondary": [
             4,
             5
-          ]
+          ],
+          "sbarCode": "BESO6",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Drugs: Using controlled substances, or using illegal drugs, or synthetic hallucinogens, or unauthorized prescription medications",
@@ -731,7 +899,10 @@
           "secondary": [
             4,
             5
-          ]
+          ],
+          "sbarCode": "BESO7",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Drugs: Distributing controlled substances or prescription medications or illegal drugs or synthetic hallucinogens, or alcohol to another student(s)",
@@ -741,7 +912,10 @@
           "secondary": [
             4,
             5
-          ]
+          ],
+          "sbarCode": null,
+          "victimCountRequired": null,
+          "reportsToLawEnforcement": null
         },
         {
           "behavior": "Fighting: The use of physical violence between students or on another person, where there is no injury as determined by the school administration",
@@ -754,7 +928,10 @@
             1,
             2,
             3
-          ]
+          ],
+          "sbarCode": "BSC14",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Fire: Attempting to set, aiding in setting, or setting a fire",
@@ -767,10 +944,13 @@
             3,
             4,
             5
-          ]
+          ],
+          "sbarCode": "BESO9",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
-          "behavior": "Gang-Related Behavior: Engaging in threatening or dangerous behavior that is gang-related as defined in §18.2-46.1",
+          "behavior": "Gang-Related Behavior: Engaging in threatening or dangerous behavior that is gang-related as defined in \u00a718.2-46.1",
           "elementary": [
             1,
             2,
@@ -781,16 +961,22 @@
             3,
             4,
             5
-          ]
+          ],
+          "sbarCode": "BESO10",
+          "victimCountRequired": false,
+          "reportsToLawEnforcement": false
         },
         {
-          "behavior": "Hazing as defined in §18.2-56 and noted in § 22.1-279.6.",
+          "behavior": "Hazing as defined in \u00a718.2-56 and noted in \u00a7 22.1-279.6.",
           "elementary": [
             5
           ],
           "secondary": [
             5
-          ]
+          ],
+          "sbarCode": "BESO11",
+          "victimCountRequired": true,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Striking Staff: The use of force against a staff member when no injury is caused",
@@ -804,7 +990,10 @@
             3,
             4,
             5
-          ]
+          ],
+          "sbarCode": "BESO4",
+          "victimCountRequired": true,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Threatening or instigating violence, injury, or harm to a staff member",
@@ -819,7 +1008,10 @@
             3,
             4,
             5
-          ]
+          ],
+          "sbarCode": "BESO12",
+          "victimCountRequired": true,
+          "reportsToLawEnforcement": false
         },
         {
           "behavior": "Threatening or instigating violence, injury, or harm to another student",
@@ -833,16 +1025,22 @@
             3,
             4,
             5
-          ]
+          ],
+          "sbarCode": "BESO13",
+          "victimCountRequired": true,
+          "reportsToLawEnforcement": false
         },
         {
-          "behavior": "Possession of a firearm or destructive device as defined in §  22.1-277.07.",
+          "behavior": "Possession of a firearm or destructive device as defined in \u00a7  22.1-277.07.",
           "elementary": [
             5
           ],
           "secondary": [
             5
-          ]
+          ],
+          "sbarCode": null,
+          "victimCountRequired": null,
+          "reportsToLawEnforcement": null
         },
         {
           "behavior": "Using any weapon to threaten or attempt to injure school personnel, students, or others",
@@ -851,7 +1049,10 @@
           ],
           "secondary": [
             5
-          ]
+          ],
+          "sbarCode": "BESO16",
+          "victimCountRequired": true,
+          "reportsToLawEnforcement": false
         }
       ]
     }
@@ -894,7 +1095,7 @@
       "In-school suspension with behavioral interventions and/or restorative practices (1-3 days)"
     ],
     "3": [
-      "Depending on the severity, chronic nature of the behavior, and/or safety concerns, Level 3 behaviors may result in the student’s short-term removal from school.",
+      "Depending on the severity, chronic nature of the behavior, and/or safety concerns, Level 3 behaviors may result in the student\u2019s short-term removal from school.",
       "Administrator/Teacher/Parent/Guardian Conference",
       "Detention",
       "In-school suspension with restorative practices (three plus days not to exceed five days)",
@@ -909,7 +1110,7 @@
       "Referral to alternative education programs"
     ],
     "4": [
-      "Some Level 4 behaviors require a report to the superintendent or superintendent’s designee as outlined in the Code of Virginia § 22.1-279.3:1. Local school board policy may require additional reporting. A referral to the superintendent or superintendent’s designee does not automatically result in a long-term suspension, change of placement or expulsion. After a review of the incident in context, the superintendent or designee may return students to the comprehensive setting with additional supports and/or responses to be implemented.",
+      "Some Level 4 behaviors require a report to the superintendent or superintendent\u2019s designee as outlined in the Code of Virginia \u00a7 22.1-279.3:1. Local school board policy may require additional reporting. A referral to the superintendent or superintendent\u2019s designee does not automatically result in a long-term suspension, change of placement or expulsion. After a review of the incident in context, the superintendent or designee may return students to the comprehensive setting with additional supports and/or responses to be implemented.",
       "Threat Assessment as indicated by the behavior",
       "Referral to law enforcement as required",
       "Parent-Administrator-Teacher-Student behavior contract",

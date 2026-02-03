@@ -77,3 +77,11 @@ body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui,
 /* --- Level description & divider inside modal --- */
 .level-desc { margin: .25rem 0 .75rem; color: #333; line-height: 1.55; }
 .divider { border: 0; height: 2px; background: #e8e8e8; border-radius: 2px; margin: .25rem 0 1rem; }
+
+
+/* --- Yes/No icons for SBAR tables --- */
+.yn-head, .yn-cell { text-align:center; white-space:nowrap; }
+.icon { display:inline-flex; align-items:center; justify-content:center; min-width:1.25rem; font-weight:800; }
+.icon-yes { color: var(--success); }
+.icon-no { color: #c0392b; }
+.icon-na { color: var(--muted); }
