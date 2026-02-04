@@ -76,8 +76,8 @@ function renderCategory(code) {
     el('tr', {},
       el('th', {class:'code-col'}, cat.abbrev || code),
       el('th', {}, 'Description'),
-      el('th', {class:'narrow-col'}, 'Victim<br>Count'),
-      el('th', {class:'narrow-col'}, 'Reports<br>to Law'),
+      el('th', {class:'narrow-col'}, 'Victim Count'),
+      el('th', {class:'narrow-col'}, 'Reports to Law'),
       el('th', {}, 'Elementary (Levels)'),
       el('th', {}, 'Secondary (Levels)')
     )
