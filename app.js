@@ -87,9 +87,10 @@ function renderCategory(code) {
   const table = el('table', {class:'table', role:'table'});
   const thead = el('thead', {},
     el('tr', {},
-      el('th', {}, 'Behavior'),
-      el('th', {class:'yn-head'}, 'Victim Count'),
-      el('th', {class:'yn-head'}, 'Reports to Law'),
+      el('th', {class:'code-head'}, cat.abbrev),
+      el('th', {}, 'Description'),
+      el('th', {class:'yn-head'}, 'Victim', el('br'), 'Count'),
+      el('th', {class:'yn-head'}, 'Reports', el('br'), 'to Law'),
       el('th', {}, 'Elementary (Levels)'),
       el('th', {}, 'Secondary (Levels)')
     )
@@ -98,11 +99,16 @@ function renderCategory(code) {
 
   const tbody = el('tbody');
   const term = (document.getElementById('searchInput')?.value || '').toLowerCase();
-  cat.behaviors
-    .filter(b => b.behavior.toLowerCase().includes(term))
+  cat.behaviors.slice().sort((a,b)=>{
+      const na=parseInt(String(a.sbarCode||'').replace(/\D/g,''))||0;
+      const nb=parseInt(String(b.sbarCode||'').replace(/\D/g,''))||0;
+      return na-nb;
+    })
+    .filter(b => (b.behavior||'').toLowerCase().includes(term) || (b.sbarCode||'').toLowerCase().includes(term))
     .forEach(b => {
       const tr = el('tr', {});
-      tr.append(el('td', {class:'behavior'}, behaviorLabel(b)));
+      tr.append(el('td', {class:'code-cell'}, (b.sbarCode || '')));
+      tr.append(el('td', {class:'behavior'}, (b.behavior || '')));
 
       // new columns: Victim Count + Reports to Law
       const victimCell = el('td', {class:'yn-cell'}, yesNoIcon(b.victimCountRequired));

@@ -85,3 +85,20 @@ body { margin:0; background:var(--bg); color:var(--fg); font:16px/1.5 system-ui,
 .icon-yes { color: var(--success); }
 .icon-no { color: #c0392b; }
 .icon-na { color: var(--muted); }
+
+
+/* --- Behavior Codes table layout updates --- */
+.code-head { width: 70px; text-align:left; }
+.code-cell {
+  width: 70px;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  white-space: nowrap;
+}
+.yn-head {
+  width: 70px;
+  white-space: normal; /* allow 2-line headings */
+  line-height: 1.15;
+  padding-left: 6px;
+  padding-right: 6px;
+}
+.yn-cell { width: 70px; padding-left: 6px; padding-right: 6px; }
