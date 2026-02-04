@@ -296,7 +296,7 @@
       "title": "Category C:  Relationship Behaviors (RB)",
       "behaviors": [
         {
-          "behavior": "Bullying with no physical injury (See Model Policy to Addressing Bullying in Virginia’s  Public Schools)",
+          "behavior": "Bullying with no physical injury (See Model Policy to Addressing Bullying in Virginia\u2019s\u00a0 Public Schools)",
           "elementary": [
             1,
             2
@@ -311,7 +311,7 @@
           "reportsToLawEnforcement": "No"
         },
         {
-          "behavior": "Cyberbullying (See Model Policy to Addressing Bullying in Virginia’s  Public Schools)",
+          "behavior": "Cyberbullying (See Model Policy to Addressing Bullying in Virginia\u2019s\u00a0 Public Schools)",
           "elementary": "",
           "secondary": "",
           "sbarCode": "RB2",
@@ -537,7 +537,7 @@
           "reportsToLawEnforcement": "No"
         },
         {
-          "behavior": "Bullying Behavior without physical injury that continues after intervention (See Link: Model Policy to Addressing Bullying in Virginia’s Public Schools) Bullying that leads to physical injury should be classified as Assault and Battery.",
+          "behavior": "Bullying Behavior without physical injury that continues after intervention (See Link: Model Policy to Addressing Bullying in Virginia\u2019s Public Schools) Bullying that leads to physical injury should be classified as Assault and Battery.",
           "elementary": [
             3,
             4
@@ -552,7 +552,7 @@
           "reportsToLawEnforcement": "No"
         },
         {
-          "behavior": "Cyberbullying that continues after intervention (See Link: Model Policy to Addressing Bullying in Virginia’s Public Schools) Cyberbullying that relates a threat to the safety of students and staff should be treated with a higher level of intervention and consequences.",
+          "behavior": "Cyberbullying that continues after intervention (See Link: Model Policy to Addressing Bullying in Virginia\u2019s Public Schools) Cyberbullying that relates a threat to the safety of students and staff should be treated with a higher level of intervention and consequences.",
           "elementary": [
             3,
             4,
@@ -700,7 +700,7 @@
           "reportsToLawEnforcement": "No"
         },
         {
-          "behavior": "Shoving, pushing, striking, biting another a student with no visible injury",
+          "behavior": "Shoving, pushing, striking, biting another\u00a0a student with no visible injury",
           "elementary": [
             1,
             2,
@@ -733,7 +733,7 @@
           "reportsToLawEnforcement": "No"
         },
         {
-          "behavior": "Physical contact of a sexual nature – patting body parts, pinching, tugging clothing",
+          "behavior": "Physical contact of a sexual nature \u2013 patting body parts, pinching, tugging clothing",
           "elementary": [
             1,
             2,
@@ -750,7 +750,7 @@
           "reportsToLawEnforcement": "No"
         },
         {
-          "behavior": "Stalking as described in the Code of Virginia section 18.2-60.3",
+          "behavior": "Stalking as described in\u00a0the Code of Virginia section 18.2-60.3",
           "elementary": "",
           "secondary": "",
           "sbarCode": "BSC21",
@@ -815,7 +815,7 @@
           "reportsToLawEnforcement": "No"
         },
         {
-          "behavior": "Weapons: Possessing any weapon (other than a firearm) as defined by § 18.2-308.1.",
+          "behavior": "Weapons: Possessing any weapon (other than a firearm) as defined by \u00a7 18.2-308.1.",
           "elementary": "",
           "secondary": "",
           "sbarCode": "BSC27",
@@ -959,7 +959,7 @@
           "reportsToLawEnforcement": "No"
         },
         {
-          "behavior": "Gang-Related Behavior: Engaging in threatening or dangerous behavior that is gang-related as defined in §18.2-46.1",
+          "behavior": "Gang-Related Behavior: Engaging in threatening or dangerous behavior that is gang-related as defined in \u00a718.2-46.1",
           "elementary": [
             1,
             2,
@@ -976,7 +976,7 @@
           "reportsToLawEnforcement": "No"
         },
         {
-          "behavior": "Hazing as defined in §18.2-56 and noted in § 22.1-279.6.",
+          "behavior": "Hazing as defined in \u00a718.2-56 and noted in \u00a7 22.1-279.6.",
           "elementary": [
             5
           ],
@@ -988,7 +988,7 @@
           "reportsToLawEnforcement": "No"
         },
         {
-          "behavior": "Threatening, intimidating, or instigating violence, injury or harm to a staff member or members (not including written threats)",
+          "behavior": "Threatening, intimidating,\u00a0or instigating violence, injury or harm to a staff member or members (not including written threats)",
           "elementary": [
             1,
             2,
@@ -1006,7 +1006,7 @@
           "reportsToLawEnforcement": "No"
         },
         {
-          "behavior": "Threatening, intimidating, or instigating violence, injury or harm to another student(s) or other(s) (not including written threats)",
+          "behavior": "Threatening, intimidating,\u00a0or instigating violence, injury or harm to another student(s) or other(s) (not including written threats)",
           "elementary": [
             1,
             2,
@@ -1067,7 +1067,7 @@
           "reportsToLawEnforcement": "Reports to Law Enforcement"
         },
         {
-          "behavior": "A crime in the community where the student was charged with an offense relating to the Commonwealth's laws, but required to be disclosed to the superintendent of the school division pursuant to § 16.1-260(G)",
+          "behavior": "A crime in the community where the student was charged with an offense relating to the Commonwealth's laws, but required to be disclosed to the superintendent of the school division pursuant to \u00a7 16.1-260(G)",
           "elementary": "",
           "secondary": "",
           "sbarCode": "BESO18",
@@ -1115,7 +1115,7 @@
       "In-school suspension with behavioral interventions and/or restorative practices (1-3 days)"
     ],
     "3": [
-      "Depending on the severity, chronic nature of the behavior, and/or safety concerns, Level 3 behaviors may result in the student’s short-term removal from school.",
+      "Depending on the severity, chronic nature of the behavior, and/or safety concerns, Level 3 behaviors may result in the student\u2019s short-term removal from school.",
       "Administrator/Teacher/Parent/Guardian Conference",
       "Detention",
       "In-school suspension with restorative practices (three plus days not to exceed five days)",
@@ -1130,7 +1130,7 @@
       "Referral to alternative education programs"
     ],
     "4": [
-      "Some Level 4 behaviors require a report to the superintendent or superintendent’s designee as outlined in the Code of Virginia § 22.1-279.3:1. Local school board policy may require additional reporting. A referral to the superintendent or superintendent’s designee does not automatically result in a long-term suspension, change of placement or expulsion. After a review of the incident in context, the superintendent or designee may return students to the comprehensive setting with additional supports and/or responses to be implemented.",
+      "Some Level 4 behaviors require a report to the superintendent or superintendent\u2019s designee as outlined in the Code of Virginia \u00a7 22.1-279.3:1. Local school board policy may require additional reporting. A referral to the superintendent or superintendent\u2019s designee does not automatically result in a long-term suspension, change of placement or expulsion. After a review of the incident in context, the superintendent or designee may return students to the comprehensive setting with additional supports and/or responses to be implemented.",
       "Threat Assessment as indicated by the behavior",
       "Referral to law enforcement as required",
       "Parent-Administrator-Teacher-Student behavior contract",

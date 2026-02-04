@@ -18,19 +18,6 @@ const el = (tag, attrs={}, ...children) => {
   return node;
 };
 
-
-function yesNoIcon(value) {
-  // value can be true/false/null
-  if (value === true) return el('span', {class:'icon icon-yes', role:'img', 'aria-label':'Yes'}, '✓');
-  if (value === false) return el('span', {class:'icon icon-no', role:'img', 'aria-label':'No'}, '✗');
-  return el('span', {class:'icon icon-na', 'aria-label':'Not specified'}, '—');
-}
-
-function behaviorLabel(b) {
-  // Prefix the definition with SBAR/behavior code when available
-  const code = b.sbarCode ? `${b.sbarCode} | ` : '';
-  return code + b.behavior;
-}
 function setThemeMeta() {
   const brand = getComputedStyle(document.documentElement).getPropertyValue('--brand').trim();
   const meta = document.querySelector('meta[name="theme-color"]');
@@ -87,10 +74,10 @@ function renderCategory(code) {
   const table = el('table', {class:'table', role:'table'});
   const thead = el('thead', {},
     el('tr', {},
-      el('th', {class:'code-head'}, cat.abbrev),
+      el('th', {class:'code-col'}, cat.abbrev || code),
       el('th', {}, 'Description'),
-      el('th', {class:'yn-head'}, 'Victim', el('br'), 'Count'),
-      el('th', {class:'yn-head'}, 'Reports', el('br'), 'to Law'),
+      el('th', {class:'narrow-col'}, 'Victim<br>Count'),
+      el('th', {class:'narrow-col'}, 'Reports<br>to Law'),
       el('th', {}, 'Elementary (Levels)'),
       el('th', {}, 'Secondary (Levels)')
     )
@@ -99,30 +86,48 @@ function renderCategory(code) {
 
   const tbody = el('tbody');
   const term = (document.getElementById('searchInput')?.value || '').toLowerCase();
-  cat.behaviors.slice().sort((a,b)=>{
-      const na=parseInt(String(a.sbarCode||'').replace(/\D/g,''))||0;
-      const nb=parseInt(String(b.sbarCode||'').replace(/\D/g,''))||0;
-      return na-nb;
-    })
-    .filter(b => (b.behavior||'').toLowerCase().includes(term) || (b.sbarCode||'').toLowerCase().includes(term))
+
+  const toNum = (s) => {
+    const m = String(s||'').match(/(\d+)/);
+    return m ? parseInt(m[1], 10) : 9999;
+  };
+
+  const iconYN = (val, label) => {
+    const yes = String(val||'').toLowerCase() === 'yes';
+    return el('span', {
+      class: 'yn-icon ' + (yes ? 'yes' : 'no'),
+      role: 'img',
+      'aria-label': label + (yes ? ': Yes' : ': No')
+    }, yes ? '✓' : '✗');
+  };
+
+  (cat.behaviors || [])
+    .filter(b => (b.behavior || '').toLowerCase().includes(term) || (b.sbarCode || '').toLowerCase().includes(term))
+    .slice()
+    .sort((a,b) => toNum(a.sbarCode) - toNum(b.sbarCode))
     .forEach(b => {
       const tr = el('tr', {});
-      tr.append(el('td', {class:'code-cell'}, (b.sbarCode || '')));
-      tr.append(el('td', {class:'behavior'}, (b.behavior || '')));
+      // Column 1: Code (e.g., BAP1)
+      tr.append(el('td', {class:'code-cell'}, b.sbarCode || ''));
+      // Column 2: Description only
+      tr.append(el('td', {class:'behavior'}, b.behavior || ''));
 
-      // new columns: Victim Count + Reports to Law
-      const victimCell = el('td', {class:'yn-cell'}, yesNoIcon(b.victimCountRequired));
-      const lawCell = el('td', {class:'yn-cell'}, yesNoIcon(b.reportsToLawEnforcement));
+      // Victim count + Law Enforcement (✓/✗)
+      const vc = el('td', {class:'center'}, iconYN(b.victimCountRequired, 'Victim Count Required'));
+      const le = el('td', {class:'center'}, iconYN(b.reportsToLawEnforcement, 'Reports to Law Enforcement'));
+      tr.append(vc, le);
 
+      // Elementary + Secondary columns preserved
       const elCell = el('td', {});
       const secCell = el('td', {});
-      const elLevels = el('div', {class:'levels'}, ...b.elementary.map(l => levelDot(l, 'elem')));
-      const secLevels = el('div', {class:'levels'}, ...b.secondary.map(l => levelDot(l, 'sec')));
+      const elLevels = el('div', {class:'levels'}, ...(b.elementary || []).map(l => levelDot(l, 'elem')));
+      const secLevels = el('div', {class:'levels'}, ...(b.secondary || []).map(l => levelDot(l, 'sec')));
       elCell.append(elLevels); secCell.append(secLevels);
+      tr.append(elCell, secCell);
 
-      tr.append(victimCell, lawCell, elCell, secCell);
       tbody.append(tr);
     });
+
   table.append(tbody);
   main.append(table);
 }
